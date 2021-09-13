@@ -12,11 +12,14 @@
 <body>
 </body>
 <script>
-
+  
+var repo_site = "https://won12.github.io/iat/";
+  
 // manually preload images due to presenting them with timeline variables
-var images = ['iatimg/females_001.jpg','iatimg/females_002.jpg','iatimg/females_003.jpg','iatimg/females_004.jpg',
-'iatimg/females_005.jpg','iatimg/females_006.jpg',
-'iatimg/males_001.jpg','iatimg/males_002.jpg','iatimg/males_003.jpg','iatimg/males_004.jpg','iatimg/males_005.jpg','iatimg/males_006.jpg'];
+var images = [repo_site+'iatimg/females_001.jpg',repo_site+'iatimg/females_002.jpg',repo_site+'iatimg/females_003.jpg',repo_site+'iatimg/females_004.jpg',
+'iatimg/females_005.jpg',repo_site+'iatimg/females_006.jpg',
+repo_site+'iatimg/males_001.jpg',repo_site+'iatimg/males_002.jpg',
+repo_site+'iatimg/males_003.jpg',repo_site+'iatimg/males_004.jpg',repo_site+'iatimg/males_005.jpg',repo_site+'iatimg/males_006.jpg'];
 var preload = {
   type: 'preload',
   images: images
@@ -406,6 +409,7 @@ var trial_block7 = {
 
   jsPsych.init({
     timeline: timeline,
+    display_element: 'display_stage',
     on_finish: function() {
       jsPsych.data.displayData();
     }
