@@ -1,0 +1,95 @@
+/* Please define your custom styles here */
+
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root { 
+  font-size: calc(12px + 5.86 * ((100vw - 544px)/(2560 - 544))); /* 5.86 = 4*(2560-544)/(1920-544) */ 
+} 
+
+main {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  padding: 2px;
+}
+
+header {
+  font-size: 1.3rem;
+  padding: 2px; 
+}
+
+header > h2 {
+  margin: 1vh 0 1vh 0;
+}
+
+footer {
+  font-size: 1.2rem;
+  padding: 1vh 0 1vh 0;
+}
+
+input, select, button, textarea {
+  font-size: initial;
+}
+
+body, footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/** body:fullscreen, ::backdrop {
+  background-color: initial;//rgb(0, 0, 0);
+  color: initial;//rgb(255, 255, 255);
+} */
+
+kbd {
+  color: rgb(80, 80, 80);
+}
+
+kbd.small {
+  min-width: 0.7rem;
+  min-height: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 0.03rem auto;
+}
+
+ul{
+  list-style-position: inside;
+  padding: 0;
+  margin-top: -.1rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.w-xl{
+  width: calc(3 * 320px);
+  width: calc(3 * var(--width-min-container));
+  max-width: calc(3 * 320px);
+  max-width: calc(3 * var(--width-min-container));
+}
+
+.xl{
+  /* width: */
+  width: calc(3 * 320px);
+  width: calc(3 * var(--width-min-container));
+  max-width: calc(3 * 320px);
+  max-width: calc(3 * var(--width-min-container));
+
+  /* heigth: */
+  height: 100%;
+}
+
+[src=' '] {
+    visibility: hidden;
+}
+
+input[type="radio"] {
+  transform: scale(1.7);
+}
